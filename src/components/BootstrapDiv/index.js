@@ -1,7 +1,7 @@
 import React from "react";
 import "./style.css";
 
-function BootstrapContainer(props) {
+function BootstrapDiv(props) {
   return (
     <div className="container">
       <div className="row no-gutters">
@@ -11,4 +11,4 @@ function BootstrapContainer(props) {
   );
 }
 
-export default BootstrapContainer;
+export default BootstrapDiv;

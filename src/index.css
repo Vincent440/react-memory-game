@@ -3,6 +3,7 @@
 }
 
 body {
+  padding-top: 154px;
   background-image: url("./blackandwhite.svg");
-
+  background-size: 100%;
 }

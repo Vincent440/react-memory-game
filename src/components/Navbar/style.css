@@ -1,9 +1,11 @@
 .title {
   width: 100%;
   text-align: center;
-  font-size: 3rem;
-  text-decoration: underline;
+  font-size: 4rem;
+  text-decoration: none;
   color:white;
   background: rgb(94, 1, 1);
-  padding: 20px;
+}
+.black-bg {
+  background-color: black;
 }
