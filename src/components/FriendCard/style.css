@@ -1,0 +1,28 @@
+.card {
+  background: #fff;
+  border-radius: 25px;
+  height: 220px;
+  margin: .25rem;
+  position: relative;
+  width: 220px;
+  box-shadow: 0 3px 6px rgb(173, 47, 47), 0 4px 6px rgb(32, 10, 10);
+}
+
+.card > .img-container {
+  border-radius: 25px;
+  height: 100%;
+  overflow: hidden;
+  background:rgb(53, 117, 163);
+}
+.card > .img-container > img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+}
+
+
+.card > .clickable:hover {
+opacity: .8;
+padding: 5px;
+}
