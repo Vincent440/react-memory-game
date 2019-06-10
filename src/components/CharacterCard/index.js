@@ -1,9 +1,9 @@
 import React from "react";
 import "./style.css";
 
-function FriendCard(props) {
+function CharacterCard(props) {
   return (
-    <div className="card">
+    <div className="card col-lg-2">
       <div onClick={() => props.clickedCharacter(props.id)} className="clickable img-container">
         <img alt={props.name} src={props.image} />
       </div>
@@ -11,4 +11,4 @@ function FriendCard(props) {
   );
 }
 
-export default FriendCard;
+export default CharacterCard;
