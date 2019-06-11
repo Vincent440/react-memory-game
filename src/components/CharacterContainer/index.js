@@ -33,11 +33,22 @@ class CharacterContainer extends Component {
   // resetGame sets this.state.score to 0 and Displays message
   resetGame = () => {
     // Game reset display message and start new game.
-    this.setState({ 
-      message: "Incorrect Guess!",
-      score: 0,
-      clickedAlready:[]
-    });
+    if(this.state.score >= this.state.topScore){
+      this.setState({
+        message: "Incorrect Guess!",
+        topScore: this.state.score,
+        score: 0,
+        clickedAlready:[]
+      });
+    }
+    else {
+      this.setState({ 
+        message: "Incorrect Guess!",
+        score: 0,
+        clickedAlready:[]
+      });
+    }
+
   };
 
 // Randomize the array so that it never appears the same. 
