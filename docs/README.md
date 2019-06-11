@@ -11,6 +11,7 @@ A characters array holds ID's and images that gets displayed every render random
 
 on a click the ID of that image gets added to a clicked array in the Containers state, which is then used on every click event to determine either to Increase Score or to reset the game if it has already been clicked. 
 
+![Mobile responsive REACT application](./reactclicker.png)
 
 ### Check Out My Profile & Portfolio Here!
 
