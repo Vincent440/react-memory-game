@@ -2,13 +2,13 @@ import React, { Component } from "react";
 import CharacterCard from "../CharacterCard";
 import BootstrapDiv from "../BootstrapDiv";
 import Navbar from "../Navbar";
-import allCharacters from "./characters.json";
-
+import characters from "./characters.json";
 
 class CharacterContainer extends Component {
   // Setting this.state.characters to the characters json array
   state = {
-    characters:allCharacters,
+    clickedAlready: [] ,
+    characters: characters,
     score:0,
     topScore:0,
     message:"Click to Start!"
@@ -20,8 +20,8 @@ class CharacterContainer extends Component {
       this.setState({
         message:"Correct Guess!",
         score: this.state.score + 1,
-        topScore: this.state.topScore +1
-      });
+        topScore: this.state.score
+      },()=> console.log("new top score!"));
     }
     else{
       this.setState({
@@ -36,7 +36,7 @@ class CharacterContainer extends Component {
     this.setState({ 
       message: "Incorrect Guess!",
       score: 0,
-      characters: allCharacters
+      clickedAlready:[]
     });
   };
 
@@ -51,26 +51,14 @@ class CharacterContainer extends Component {
 
   handleClick = id => {
     // ClickedCharacters filters the characters array from state to grab only that character's object that has been clicked
-    const clickedCharacter = this.state.characters.filter(char => char.id === id);
 
-    if (clickedCharacter[0].clicked) {
+    if (this.state.clickedAlready.includes(id)) {
       this.resetGame();
     }
     else {
-
-      const updatedCharacters = this.state.characters.map(character => {
-        if(character.id === id){
-          character.clicked = true;
-          return character;
-        }
-        else {
-          return character;
-        }
-      });
-
-      this.setState({ characters : updatedCharacters });
-
-      this.correctGuess();
+      let updatedClickArray = this.state.clickedAlready
+      updatedClickArray.push(id);
+      this.setState({clickedAlready: updatedClickArray },()=> this.correctGuess());
     }
   }
   // Map over this.state.characters and render a CharacterCard component for each character object

@@ -12,7 +12,7 @@
   border-radius: 40px;
   height: 100%;
   overflow: hidden;
-  background:rgb(141, 2, 2);
+  background:rgb(102, 2, 2);
 }
 .card > .img-container > img {
   display: block;
