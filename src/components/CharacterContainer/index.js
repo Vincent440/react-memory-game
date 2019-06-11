@@ -3,7 +3,7 @@ import CharacterCard from "../CharacterCard";
 import BootstrapDiv from "../BootstrapDiv";
 import Navbar from "../Navbar";
 import characters from "./characters.json";
-
+import Footer from "../Footer";
 class CharacterContainer extends Component {
   // Setting this.state.characters to the characters json array
   state = {
@@ -11,7 +11,7 @@ class CharacterContainer extends Component {
     characters: characters,
     score:0,
     topScore:0,
-    message:"Click to Start!"
+    message:"Click any image to Start, Do not select more then once each game!"
   };
 
   // correctGuess increases the score by 1, Displays message, and if needed updates top score.
@@ -87,6 +87,7 @@ class CharacterContainer extends Component {
             />
           ))}
         </BootstrapDiv>
+        <Footer />
       </div>
     );
   }
