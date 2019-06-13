@@ -3,8 +3,8 @@ import "./style.css";
 
 function BootstrapDiv(props) {
   return (
-    <div className="container">
-      <div className="row no-gutters">
+    <div className="container p-0">
+      <div className="row no-gutters p-0">
         {props.children}
       </div>
     </div>

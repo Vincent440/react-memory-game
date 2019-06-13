@@ -9,3 +9,12 @@
 .black-bg {
   background-color: black;
 }
+
+@media only screen and (max-width: 660px) {
+  .alignment {
+    justify-content: center;
+  }  
+  .appname {
+    font-size: 2em;
+  }
+}

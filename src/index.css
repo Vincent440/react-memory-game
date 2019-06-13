@@ -3,7 +3,12 @@
 }
 
 body {
-  padding-top: 160px;
+  margin-top: 160px;
   background-image: url("./DF_Path_NoRorik.jpg");
   background-size: 100%;
+}
+@media only screen and (min-width: 400px) {
+  body {
+    margin-top: 120px;
+  }
 }

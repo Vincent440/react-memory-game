@@ -1,29 +1,59 @@
 .card {
   background: #fff;
-  border-radius: 40px;
-  height: 130px;
+  border-radius: 80px;
+  height: 120px;
   margin: .2rem;
   position: relative;
-  width: 180px;
+  width: 120px;
   box-shadow: 0 3px 4px rgb(92, 5, 5), 0 3px 3px rgb(214, 0, 0);
 }
 
 .card > .img-container {
-  border-radius: 40px;
+  border-radius: 80px;
   height: 100%;
   overflow: hidden;
-  background:rgb(102, 2, 2);
+  background:rgb(82, 2, 2);
 }
 .card > .img-container > img {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+  width: 60%;
 }
 
 
 .card > .clickable:hover {
+  border-style: outset;
   margin: 0px;
   padding: 8px;
   box-shadow: 0 8px 9px rgb(92, 5, 5), 0 -6px 8px rgb(214, 0, 0);
+}
+
+
+@media only screen and (min-width: 576px) {
+
+  .card {
+    background: #fff;
+    border-radius: 80px;
+    height: 180px;
+    margin: .2rem;
+    position: relative;
+    width: 180px;
+    box-shadow: 0 3px 4px rgb(92, 5, 5), 0 3px 3px rgb(214, 0, 0);
+  }
+  
+  .card > .img-container {
+    border-radius: 80px;
+    height: 100%;
+    overflow: hidden;
+    background:rgb(82, 2, 2);
+  }
+
+  .card > .img-container > img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%; 
+  }
+
 }
