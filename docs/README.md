@@ -15,6 +15,6 @@ on a click the ID of that image gets added to a clicked array in the Containers 
 
 ### Check Out My Profile & Portfolio Here!
 
-Please go to my [Github Profile](https://github.com/Vincent440) to see my repositories.
+[Vince Shury Github Profile](https://github.com/Vincent440)
 
-[Click here](https://vincent440.github.io/) to view the live version of this page on github.
+[Vince Shury Portfolio](https://vincent440.github.io/) 
