@@ -1,14 +1,14 @@
-import React from "react";
-import "./style.css";
+import React from 'react'
+import './style.css'
 
-function BootstrapDiv(props) {
+function BootstrapDiv (props) {
   return (
-    <div className="container p-0">
-      <div className="row no-gutters p-0">
+    <div className='container p-0'>
+      <div className='row no-gutters p-0'>
         {props.children}
       </div>
     </div>
-  );
+  )
 }
 
-export default BootstrapDiv;
+export default BootstrapDiv

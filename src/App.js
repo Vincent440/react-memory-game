@@ -23,7 +23,7 @@ class App extends Component {
         topScore: this.state.score
       },()=> console.log("new top score!"));
     }
-    else{
+    else {
       this.setState({
         message:"Correct Guess!",
         score: this.state.score + 1
