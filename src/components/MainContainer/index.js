@@ -1,7 +1,7 @@
 import React from 'react'
 import './style.css'
 
-function BootstrapDiv (props) {
+function MainContainer (props) {
   return (
     <div className='container p-0'>
       <div className='row no-gutters p-0'>
@@ -11,4 +11,4 @@ function BootstrapDiv (props) {
   )
 }
 
-export default BootstrapDiv
+export default MainContainer

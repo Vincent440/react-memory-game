@@ -1,7 +1,7 @@
 import React from 'react'
 import './style.css'
 
-function Navbar (props) {
+function TopNavbar (props) {
   return (
     <div className='container'>
       <nav className='navbar alignment fixed-top black-bg text-white m-0 p-1'>
@@ -12,7 +12,8 @@ function Navbar (props) {
         </div>
         <span className='btn btn-outline-light btn-block disabled text-center message'>{props.message}</span>
       </nav>
-    </div>)
+    </div>
+  )
 }
 
-export default Navbar
+export default TopNavbar

@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import CharacterCard from "./components/CharacterCard";
-import BootstrapDiv from "./components/BootstrapDiv";
-import Navbar from "./components/Navbar";
+import MainContainer from "./components/MainContainer";
+import TopNavbar from "./components/TopNavbar";
 import characters from "./characters.json";
 import Footer from "./components/Footer";
 
@@ -10,9 +10,9 @@ class App extends Component {
   state = {
     clickedAlready: [] ,
     characters: characters,
-    score:0,
-    topScore:0,
-    message:"Click any image to Start, Do not select more then once each game!"
+    score: 0,
+    topScore: 0,
+    message: "Click any image to Start, Do not select more then once each game!"
   };
   // correctGuess increases the score by 1, Displays message, and if needed updates top score.
   correctGuess = () => {
@@ -21,7 +21,7 @@ class App extends Component {
         message:"Correct Guess!",
         score: this.state.score + 1,
         topScore: this.state.score
-      },()=> console.log("new top score!"));
+      });
     }
     else {
       this.setState({
@@ -76,8 +76,8 @@ class App extends Component {
   render() {
     return (
       <div>
-        <Navbar message={this.state.message} currentScore={this.state.score} topScore={this.state.topScore}></Navbar>
-        <BootstrapDiv>
+        <TopNavbar message={this.state.message} currentScore={this.state.score} topScore={this.state.topScore} />
+        <MainContainer>
           {this.shuffleArray(this.state.characters).map(character => (
             <CharacterCard
               handleClick={this.handleClick}
@@ -86,7 +86,7 @@ class App extends Component {
               image={character.image}
             />
           ))}
-        </BootstrapDiv>
+        </MainContainer>
         <Footer />
       </div>
     );
