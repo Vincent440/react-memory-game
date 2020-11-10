@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/react-memory-game/static/css/main.87cdd4a7.chunk.css",
+    "main.js": "/react-memory-game/static/js/main.611c273d.chunk.js",
+    "main.js.map": "/react-memory-game/static/js/main.611c273d.chunk.js.map",
+    "runtime-main.js": "/react-memory-game/static/js/runtime-main.8e1ca9f1.js",
+    "runtime-main.js.map": "/react-memory-game/static/js/runtime-main.8e1ca9f1.js.map",
+    "static/js/2.e052b3d4.chunk.js": "/react-memory-game/static/js/2.e052b3d4.chunk.js",
+    "static/js/2.e052b3d4.chunk.js.map": "/react-memory-game/static/js/2.e052b3d4.chunk.js.map",
+    "index.html": "/react-memory-game/index.html",
+    "static/css/main.87cdd4a7.chunk.css.map": "/react-memory-game/static/css/main.87cdd4a7.chunk.css.map",
+    "static/js/2.e052b3d4.chunk.js.LICENSE.txt": "/react-memory-game/static/js/2.e052b3d4.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/react-memory-game/static/media/DF_Path_NoRorik.d802a47b.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8e1ca9f1.js",
+    "static/js/2.e052b3d4.chunk.js",
+    "static/css/main.87cdd4a7.chunk.css",
+    "static/js/main.611c273d.chunk.js"
+  ]
+}
