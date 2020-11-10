@@ -1,10 +1,11 @@
-# Clicky Game
+# Clicky Game Requirements
 
-## Overview
+## Description
 
-For this assignment, you'll create a memory game with React. This assignment will require you to break up your application's UI into components, manage component state, and respond to user events.
+Create a memory game with React. 
+Break up your application's UI into components, manage component state, and respond to user events.
 
-### Instructions
+### Steps
 
 1. Check out the [example solution](https://clicky-game.netlify.com/) and study the app's basic functionality.
 
@@ -24,13 +25,3 @@ For this assignment, you'll create a memory game with React. This assignment wil
 #### Hints
 
 * Begin by building a non-functioning static version for your Clicky Game. Then work on making the game interactive.
-
-- - -
-
-#### Minimum Requirements
-
-* **This assignment must be deployed.** Attempt to complete homework assignment as described in instructions. If unable to complete certain portions, please pseudocode these portions to describe what remains to be completed. Hosting on Github Pages and adding a README.md are required for this homework. In addition, add this homework to your portfolio. More information can be found below.
-
-### Submission on BCS
-
-* Please submit both the deployed GitHub Pages link to your homework AND the link to the Github Repository!
